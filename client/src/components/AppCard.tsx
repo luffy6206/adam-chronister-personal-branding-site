@@ -24,9 +24,9 @@ export function AppCard({
       <div className="w-11 h-11 rounded-lg bg-gold/15 text-gold flex items-center justify-center mb-5">
         <Icon className="w-5 h-5" />
       </div>
-      <h3 className="text-lg font-bold uppercase tracking-wide text-foreground mb-2">{title}</h3>
+      <h3 className="text-lg font-semibold uppercase tracking-wide text-foreground mb-2">{title}</h3>
       <p className="text-sm text-muted-foreground leading-relaxed mb-5">{description}</p>
-      <div className="text-gold inline-flex items-center gap-2 text-sm font-semibold group-hover:gap-3 transition-all">
+      <div className="text-gold inline-flex items-center gap-2 text-sm font-medium group-hover:gap-3 transition-all">
         Open tool <ArrowRight className="w-4 h-4" />
       </div>
     </motion.a>

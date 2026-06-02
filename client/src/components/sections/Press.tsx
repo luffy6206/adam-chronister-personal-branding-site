@@ -31,7 +31,7 @@ export function Press() {
               className="bg-white rounded-2xl p-5 border border-black/5 shadow-[0_6px_20px_rgba(0,0,0,0.05)] flex flex-col"
             >
               <div className="h-14 flex items-center mb-3">
-                <span className="font-bold text-black/90" style={{ fontFamily: 'Georgia, serif' }}>{p.outlet}</span>
+                <span className="font-bold text-black/90" style={{ fontFamily: 'Poppins, sans-serif' }}>{p.outlet}</span>
               </div>
               <p className="text-[10px] tracking-[0.2em] text-black/40 uppercase mb-2">{p.date}</p>
               <h3 className="text-sm font-bold text-black mb-2 leading-snug">{p.title}</h3>
