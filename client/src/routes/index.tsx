@@ -37,7 +37,8 @@ function Index() {
         <Apps />
         <Contact />
       </main>
-      <Footer />
+      <Footer /> 
     </div>
   );
 }
+// jdkfdfdfd
