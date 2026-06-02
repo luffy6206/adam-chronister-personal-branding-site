@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import signature from "../assets/signature.png"
 
@@ -37,11 +37,20 @@ export function Navbar() {
                     />
                 </Link>
                 <nav className="hidden md:flex items-center gap-8">
-                    {links.map((l) => (
-                        <a key={l.label} href={l.to} className="text-sm text-foreground/80 hover:text-gold transition-colors">
-                            {l.label}
-                        </a>
-                    ))}
+                    {links.map((l) => {
+                        if (l.to.includes("#")) {
+                            return (
+                                <a key={l.label} href={l.to} className="text-sm text-foreground/80 hover:text-gold transition-colors">
+                                    {l.label}
+                                </a>
+                            );
+                        }
+                        return (
+                            <Link key={l.label} to={l.to} className="text-sm text-foreground/80 hover:text-gold transition-colors">
+                                {l.label}
+                            </Link>
+                        );
+                    })}
                 </nav>
                 <a
                     href="/authority-book"
