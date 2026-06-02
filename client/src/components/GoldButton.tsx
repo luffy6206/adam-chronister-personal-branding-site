@@ -10,7 +10,7 @@ export function GoldButton({
   ...rest
 }: ComponentProps<"a"> & { variant?: Variant; children: ReactNode }) {
   const base =
-    "inline-flex items-center gap-2 px-8 py-3 text-sm font-bold rounded-lg transition-all duration-200 hover:-translate-y-1 uppercase tracking-wider";
+    "inline-flex items-center gap-2 px-4 py-3 sm:px-6 text-sm font-bold rounded-lg transition-all duration-200 hover:-translate-y-1 uppercase tracking-wider";
   const styles: Record<Variant, string> = {
     gold: "bg-[#FDD835] text-black hover:brightness-110 shadow-lg shadow-gold/50",
     outline: "border-2 border-white text-white hover:bg-white/10",

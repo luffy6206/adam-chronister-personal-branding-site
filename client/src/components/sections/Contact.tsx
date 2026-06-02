@@ -26,7 +26,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="bg-surface-light py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
         <div>
           <p style={{ fontFamily: "'Dancing Script', cursive", fontSize: "2rem" }} className="text-black/80">Adam Chronister</p>
           <p className="text-xs tracking-[0.25em] text-gold uppercase font-bold mt-4 mb-3">Connect with Adam</p>

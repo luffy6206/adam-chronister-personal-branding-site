@@ -12,7 +12,7 @@ const press = [
 export function Press() {
   return (
     <section className="bg-surface-light py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <p className="text-xs tracking-[0.25em] text-gold uppercase font-semibold mb-4">Press & PR</p>
           <h2 className="display-heading text-4xl md:text-6xl text-[color:var(--surface-light-foreground)]">

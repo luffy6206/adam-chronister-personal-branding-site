@@ -16,7 +16,7 @@ export function About() {
       className="relative py-24 md:py-32 bg-cover bg-center"
       style={{ backgroundImage: `linear-gradient(180deg, rgba(5,5,5,0.97), rgba(5,5,5,0.97)), url(${audienceBg})` }}
     >
-      <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-12 lg:gap-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-20">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}

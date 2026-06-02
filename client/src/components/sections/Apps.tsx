@@ -5,7 +5,7 @@ import { GoldButton } from "../GoldButton";
 export function Apps() {
   return (
     <section id="apps" className="py-24 md:py-32 bg-background">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <p className="text-xs tracking-[0.25em] text-gold uppercase font-semibold mb-3">Apps & Tools</p>

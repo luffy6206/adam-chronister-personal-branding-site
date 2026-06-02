@@ -25,10 +25,9 @@ export function Navbar() {
 
     return (
         <header
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-background/85 backdrop-blur-md border-b border-border" : "bg-transparent"
-                }`}
+            className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-border"
         >
-            <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
                 <Link to="/">
                     <img
                         src={signature}
@@ -58,19 +57,19 @@ export function Navbar() {
                 >
                     Pre Order →
                 </a>
-                <button className="md:hidden text-foreground" onClick={() => setOpen(!open)} aria-label="Menu">
+                <button className="md:hidden text-foreground p-3 rounded-full hover:bg-white/10 transition" onClick={() => setOpen(!open)} aria-label="Menu">
                     {open ? <X /> : <Menu />}
                 </button>
             </div>
             {open && (
                 <div className="md:hidden bg-background/95 backdrop-blur-md border-t border-border">
-                    <nav className="flex flex-col px-6 py-4 gap-3">
+                    <nav className="flex flex-col px-4 sm:px-6 py-4 gap-3">
                         {links.map((l) => (
-                            <a key={l.label} href={l.to} onClick={() => setOpen(false)} className="text-foreground/80 hover:text-gold py-2">
+                            <a key={l.label} href={l.to} onClick={() => setOpen(false)} className="text-foreground/80 hover:text-gold py-3 text-base">
                                 {l.label}
                             </a>
                         ))}
-                        <a href="/authority-book" className="bg-gold text-primary-foreground px-5 py-2.5 text-sm font-semibold rounded-md text-center">
+                        <a href="/authority-book" className="bg-gold text-primary-foreground px-5 py-3 text-sm font-semibold rounded-md text-center w-full">
                             Pre Order →
                         </a>
                     </nav>

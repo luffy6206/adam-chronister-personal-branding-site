@@ -5,7 +5,7 @@ import { GoldButton } from "../GoldButton";
 export function BookPromo() {
   return (
     <section className="bg-surface-light py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -15,7 +15,7 @@ export function BookPromo() {
         >
           <div className="relative">
             <div className="absolute -inset-8 bg-gold/20 blur-3xl rounded-full" />
-            <img src={bookCover} alt="Authority Engineering book" loading="lazy" width={400} height={600} className="relative w-[280px] md:w-[360px] drop-shadow-2xl" />
+            <img src={bookCover} alt="Authority Engineering book" loading="lazy" width={400} height={600} className="relative w-full max-w-[22rem] sm:max-w-[24rem] md:max-w-[28rem] drop-shadow-2xl" />
           </div>
         </motion.div>
         <motion.div
@@ -34,7 +34,7 @@ export function BookPromo() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <GoldButton href="/authority-book">Pre Order</GoldButton>
-            <a href="#" className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-md border border-black/20 text-black hover:bg-black hover:text-white transition">
+            <a href="#" className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-6 py-3 text-sm font-semibold rounded-md border border-black/20 text-black hover:bg-black hover:text-white transition">
               Sample Chapter →
             </a>
           </div>

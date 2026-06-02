@@ -24,7 +24,7 @@ export function SectionTitle({
         <div className="text-xs tracking-[0.25em] font-semibold text-gold uppercase mb-4">{eyebrow}</div>
       )}
       <h2
-        className={`display-heading text-4xl md:text-5xl lg:text-6xl ${
+        className={`display-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl ${
           light ? "text-[color:var(--surface-light-foreground)]" : "text-foreground"
         }`}
       >

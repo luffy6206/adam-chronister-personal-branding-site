@@ -19,7 +19,7 @@ export function Podcast() {
       className="relative py-24 md:py-32 bg-cover bg-center"
       style={{ backgroundImage: `linear-gradient(180deg, rgba(5,5,5,0.92), rgba(5,5,5,0.98)), url(${audienceBg})` }}
     >
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <p className="text-xs tracking-[0.25em] text-gold uppercase font-semibold mb-3">Podcast Appearances</p>
@@ -49,14 +49,16 @@ export function Podcast() {
           </div>
           <ul className="divide-y divide-border">
             {episodes.map((ep, i) => (
-              <li key={ep.title} className="flex items-center gap-4 px-6 py-4 hover:bg-secondary/40 transition group">
+              <li key={ep.title} className="flex flex-col gap-3 px-6 py-4 hover:bg-secondary/40 transition group sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex items-center gap-4 min-w-0">
                 <span className="text-xs text-muted-foreground w-6">{i + 1}</span>
                 <button className="w-8 h-8 rounded-full border border-border flex items-center justify-center group-hover:border-gold group-hover:text-gold transition">
                   {i === 0 ? <Pause className="w-3 h-3" /> : <Play className="w-3 h-3 ml-0.5 fill-current" />}
                 </button>
-                <span className="flex-1 text-sm text-foreground/90 truncate">{ep.title}</span>
-                <span className="text-xs text-muted-foreground">{ep.duration}</span>
-              </li>
+                <span className="flex-1 min-w-0 text-sm text-foreground/90 truncate">{ep.title}</span>
+              </div>
+              <span className="text-xs text-muted-foreground">{ep.duration}</span>
+            </li>
             ))}
           </ul>
         </motion.div>

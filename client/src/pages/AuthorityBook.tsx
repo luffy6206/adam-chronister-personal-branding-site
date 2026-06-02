@@ -87,7 +87,7 @@ function BookHero() {
       className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-cover bg-center"
       style={{ backgroundImage: `linear-gradient(180deg, rgba(5,5,5,0.85), rgba(5,5,5,0.97)), url(${audienceBg})` }}
     >
-      <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
           <p className="text-xs tracking-[0.25em] text-gold uppercase font-bold mb-4">A New Release · Vol. One</p>
           <h1 className="display-heading text-5xl md:text-7xl">Authority<br />Engineering</h1>
@@ -109,7 +109,7 @@ function BookHero() {
         <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="flex justify-center">
           <div className="relative">
             <div className="absolute -inset-10 bg-gold/25 blur-3xl rounded-full" />
-            <img src={bookCover} alt="Authority Engineering Book Cover" width={400} height={600} className="relative w-[280px] md:w-[380px] drop-shadow-2xl" />
+            <img src={bookCover} alt="Authority Engineering Book Cover" width={400} height={600} className="relative w-full max-w-[22rem] sm:max-w-[24rem] md:max-w-[28rem] drop-shadow-2xl" />
           </div>
         </motion.div>
       </div>
@@ -123,11 +123,11 @@ function Problem() {
       className="py-24 md:py-32 bg-cover bg-center"
       style={{ backgroundImage: `linear-gradient(rgba(5,5,5,0.97), rgba(5,5,5,0.97)), url(${audienceBg})` }}
     >
-      <div className="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-12 items-start">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-start">
         <div>
           <p className="text-xs tracking-[0.25em] text-gold uppercase font-bold mb-4">The Premise</p>
           <h2 className="display-heading text-4xl md:text-6xl">The Window is<br />Still Open.<br />But It is Closing.</h2>
-          <a className="mt-8 inline-flex bg-gold text-primary-foreground px-6 py-3 text-sm font-bold rounded-md hover:brightness-110" href="#sample">
+          <a className="mt-8 inline-flex w-full sm:w-auto justify-center bg-gold text-primary-foreground px-6 py-3 text-sm font-bold rounded-md hover:brightness-110" href="#sample">
             Download Sample Chapter
           </a>
         </div>
@@ -168,7 +168,7 @@ function Framework() {
 
   return (
     <section className="py-24 md:py-32 bg-background">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-xs tracking-[0.25em] text-gold uppercase font-bold mb-4">The Framework</p>
           <h2 className="display-heading text-4xl md:text-6xl">Authority Engineering in<br />Three Pillars</h2>
@@ -227,7 +227,7 @@ function WhatsInside() {
 
   return (
     <section className="py-24 md:py-32 bg-secondary">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-xs tracking-[0.25em] text-gold uppercase font-bold mb-4">What's Inside</p>
           <h2 className="display-heading text-4xl md:text-6xl">Everything You Need<br />to Build Authority</h2>
@@ -261,7 +261,7 @@ function WhatsInside() {
 function SampleBanner() {
   return (
     <section id="sample" className="py-16 bg-gradient-to-r from-gold/10 to-gold/5 border-y border-gold/20">
-      <div className="mx-auto max-w-7xl px-6 text-center">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
         <h3 className="text-2xl font-bold text-foreground mb-4">Get a Free Sample Chapter</h3>
         <p className="text-foreground/80 mb-6">Read the first chapter and discover the Authority Engineering framework</p>
         <GoldButton href="#">Download Sample Chapter</GoldButton>
@@ -273,7 +273,7 @@ function SampleBanner() {
 function AuthorSection() {
   return (
     <section className="py-24 md:py-32 bg-background">
-      <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
         <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }}>
           <img src={authorImg} alt="Adam Chronister" className="w-full rounded-lg" />
         </motion.div>
@@ -295,7 +295,7 @@ function AuthorSection() {
 function HowItWorks() {
   return (
     <section className="py-24 md:py-32 bg-secondary">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-xs tracking-[0.25em] text-gold uppercase font-bold mb-4">The Process</p>
           <h2 className="display-heading text-4xl md:text-6xl">How Authority Engineering Works</h2>
@@ -329,7 +329,7 @@ function HowItWorks() {
 function Products() {
   return (
     <section className="py-24 md:py-32 bg-background">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="display-heading text-4xl md:text-6xl">Available Formats</h2>
         </div>
@@ -361,7 +361,7 @@ function Products() {
 function PickFormat() {
   return (
     <section className="py-24 md:py-32 bg-secondary">
-      <div className="mx-auto max-w-7xl px-6 text-center">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="display-heading text-4xl md:text-6xl mb-8">Choose Your Format</h2>
         <p className="text-foreground/80 text-lg mb-12 max-w-2xl mx-auto">
           Authority Engineering is available in multiple formats. Choose what works best for you.
@@ -399,7 +399,7 @@ function FAQ() {
 
   return (
     <section className="py-24 md:py-32 bg-background">
-      <div className="mx-auto max-w-4xl px-6">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="display-heading text-4xl md:text-6xl">Frequently Asked<br />Questions</h2>
         </div>

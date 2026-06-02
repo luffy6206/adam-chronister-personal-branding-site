@@ -12,7 +12,7 @@ export function Hero() {
             style={{ backgroundImage: `linear-gradient(180deg, rgba(5,5,5,0.85) 0%, rgba(5,5,5,0.95) 100%), url(${audienceBg})` }}
         >
             <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-transparent to-background pointer-events-none" />
-            <div className="relative mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-10 items-center">
+            <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -20,8 +20,8 @@ export function Hero() {
                 >
                         <h1
   className="
-    text-[5rem]
-    sm:text-[4rem]
+    text-4xl
+    sm:text-5xl
     md:text-[4rem]
     lg:text-[5rem]
     uppercase
@@ -66,16 +66,16 @@ export function Hero() {
                         alt="Adam Chronister speaking on stage"
                         width={1024}
                         height={1024}
-                        className="relative rounded-2xl object-cover w-full h-[480px] md:h-[560px]"
+                        className="relative rounded-2xl object-cover w-full max-w-[28rem] sm:max-w-[32rem] md:max-w-[36rem] h-auto mx-auto"
                     />
                 </motion.div>
             </div>
-            <div className="relative mx-auto max-w-7xl px-6 mt-16 pt-8 border-t border-border/60">
+            <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-border/60">
                 <div className="absolute inset-x-0 top-0 h-px bg-white/20" />
-                <div className="flex items-center justify-between gap-6">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-center justify-between">
                     <span className="text-xs tracking-[0.3em] text-muted-foreground uppercase">As featured in:</span>
 
-                    <div className="ml-6 flex-1 overflow-hidden">
+                    <div className="flex-1 min-w-0 overflow-hidden">
                         <div className="marquee flex gap-12 items-center whitespace-nowrap opacity-90">
                             {featured.concat(featured).map((f, i) => (
                                 <span key={`${f}-${i}`} className="text-white font-bold text-sm md:text-base tracking-wider px-2">{f}</span>
