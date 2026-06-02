@@ -13,7 +13,7 @@ import { Contact } from "@/components/sections/Contact";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Adam Chronister — Digital Marketing Expert, AI Innovator & Author" },
+      { title: "Adam Chronister — Digital Marketing Expert, AI Innovator & Author." },
       { name: "description", content: "Adam Chronister helps brands build authority in the age of AI. Speaker, founder of Enleaf, and author of Authority Engineering." },
       { property: "og:title", content: "Adam Chronister — Authority in the Age of AI" },
       { property: "og:description", content: "Speaker, author, and founder of Enleaf. Helping brands become the ones AI recommends." },
